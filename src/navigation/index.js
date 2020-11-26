@@ -4,7 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import SplashScreen from '../screens/splash';
 import SearchScreen from '../screens/search';
 import BulletinScreen from '../screens/bulletin';
-import BulletinDetailScreen from '../screens/bulletinDetail';
+import BulletinDetailScreen from '../screens/bulletindetails/index';
 import DarwerMenu from '../screens/drawer/index';
 import * as colors from '../constants/colors';
 
@@ -35,7 +35,7 @@ const AppStack = createStackNavigator(
     },
   },
   {
-    Bulletindetail: {
+    Bulletindetails: {
       screen: BulletinDetailScreen,
       navigationOptions: {
         header: null,
@@ -55,9 +55,9 @@ const DrawerNavigator = createDrawerNavigator({
   Bulletin: {
     screen: BulletinScreen,
   },
-  // ChangePassword: {
-  //   screen: ChangePasswordScreen,
-  // },
+  Bulletindetails: {
+    screen: BulletinDetailScreen,
+  },
   // ContactUs: {
   //   screen: ContactUsScreen,
   // },

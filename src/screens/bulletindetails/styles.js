@@ -2,7 +2,7 @@ import {StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
   MainBox:{
-    margin:12
+   flex:1
   },
    
    menuicon:{
@@ -20,13 +20,16 @@ const styles = StyleSheet.create({
   alignItems: 'flex-start', 
 },
  datatext:{
-   fontSize:15,
+   fontSize:16,
    fontWeight:'bold',
-   color:'black'
+   color:'black',
+   lineHeight:25
  },
  titleText:{
-  fontSize:13,
-  paddingTop:1 
+   marginLeft:'1%',
+  fontSize:14,
+  paddingTop:1 ,
+  lineHeight:25
  },
  titleText1:{
    paddingTop:5
